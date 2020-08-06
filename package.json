@@ -6,14 +6,24 @@
   "author": "<leonardolp@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "prepush": "yarn test:coverage",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
     "test:break": "./node_modules/.bin/mocha tests/**/*.spec.js --bail --require babel-register",
-    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch --require babel-register"
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch --require babel-register",
+    "test:coverage": "nyc yarn test"
+  },
+  "nyc": {
+    "functions": 95,
+    "lines": 95,
+    "check-coverage": true,
+    "reporter": ["text", "html"],
+    "exclude": ["tests/**"]
   },
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
-    "mocha": "^8.1.1"
+    "mocha": "^8.1.1",
+    "nyc": "^15.1.0"
   }
 }
