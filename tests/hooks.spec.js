@@ -1,11 +1,10 @@
-const expect = require('chai').expect;
+import { expect } from 'chai';
 
 describe('Main', () => {
     let arr;
 
     //roda antes
     before(() => {
-        t = console.time()
         console.log('Iniciando...');
     })
 
