@@ -1,0 +1,15 @@
+{
+  "name": "tdd-estudo",
+  "version": "1.0.0",
+  "main": ".src/main.js",
+  "repository": "https://github.com/leoeek/tdd-estudo.git",
+  "author": "<leonardolp@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1"
+  }
+}
