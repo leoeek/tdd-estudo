@@ -1,0 +1,1 @@
+{"parent":null,"pid":11389,"argv":["/usr/local/bin/node","/usr/share/yarn/bin/yarn.js","test","install"],"execArgv":[],"cwd":"/home/eek/www/tdd-estudo","time":1596731323337,"ppid":11378,"coverageFilename":"/home/eek/www/tdd-estudo/.nyc_output/c682edf0-1279-42d1-88f7-6942cf1369a2.json","externalId":"","uuid":"c682edf0-1279-42d1-88f7-6942cf1369a2","files":[]}
