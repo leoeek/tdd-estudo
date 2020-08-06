@@ -12,6 +12,9 @@
     "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch --require babel-register",
     "test:coverage": "nyc yarn test"
   },
+  "prepush": {
+    "task": ["yarn test:coverage"]
+  },
   "nyc": {
     "functions": 95,
     "lines": 95,
